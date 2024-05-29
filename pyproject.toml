@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pixiu"
+version = "0.1.0"
+description = ""
+authors = ["Han Lee <lee.hanchung@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sentence-transformers = "^3.0.0"
+scikit-learn = "^1.5.0"
+openai = "^1.30.4"
+peft = "^0.11.1"
+rank-bm25 = "^0.2.2"
+evaluate = "^0.4.2"
+sentencepiece = "^0.2.0"
+vllm = "^0.4.2"
+spacy = "^3.7.4"
+en-core-web-sm = {path = "src/factscore_package/en_core_web_sm-3.7.1.tar.gz"}
+seqeval = "^1.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
